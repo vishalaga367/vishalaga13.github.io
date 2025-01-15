@@ -173,6 +173,13 @@
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
 						}, text.length * 200);
 						}
+							//once the animation is complete, resetthe textand start over
+							setTimeout(() =>
+							typingAnimationElement. texcontent ='';
+							playTypinganimation(typingTexts[(typingTexts.indexof(text) + 1) % typingTexts.length]);
+							}, text.length * 200);
+							}
+						
 
 						// Start the typing animation loop
 						playTypingAnimation(typingTexts[0]);
